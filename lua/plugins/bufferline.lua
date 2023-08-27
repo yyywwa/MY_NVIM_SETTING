@@ -23,8 +23,7 @@ return {
 						filetype = "NvimTree",
 						text = "File Explorer",
 						highlight = "Directory",
-						text_align = "left",
-					},
+						text_align = "left", },
 				},
 			},
 		})
@@ -32,8 +31,8 @@ return {
 		-----------------------keymap---------------------------------
 		-- bufferline
 		-- 左右Tab切换
-		map("n", "<C-h>", ":w | BufferLineCyclePrev<CR>", opt)
-		map("n", "<C-l>", ":w | BufferLineCycleNext<CR>", opt)
+		map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
+		map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 		-- 关闭
 		map("n", "<leader>bw", ":Bdelete!<CR>", opt)
 		--"moll/vim-bbye"

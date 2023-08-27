@@ -31,10 +31,8 @@ require("lazy").setup({
 	--主题
 	{
 		"folke/tokyonight.nvim",
+		"morhetz/gruvbox",
 		version = "*",
-		config = function()
-			pcall(vim.cmd, "colorscheme " .. "tokyonight")
-		end,
 	},
 
 	--翻译
@@ -67,20 +65,6 @@ require("lazy").setup({
 				-- for example, context is off by default, use this to turn it on
 				show_current_context = true,
 				show_current_context_start = true,
-			})
-		end,
-	},
-
-	{
-		"nvim-treesitter/nvim-treesitter",
-		dependencies = {
-			"JoosepAlviste/nvim-ts-context-commentstring",
-			"numToStr/Comment.nvim",
-		},
-		version = "*",
-		config = function()
-			require("Comment").setup({
-				pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
 			})
 		end,
 	},
