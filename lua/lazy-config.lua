@@ -28,13 +28,6 @@ require("lazy").setup({
 		end,
 	},
 
-	--主题
-	{
-		"folke/tokyonight.nvim",
-		"morhetz/gruvbox",
-		version = "*",
-	},
-
 	--翻译
 	{
 		"voldikss/vim-translator",
