@@ -40,7 +40,7 @@ return {
 				-- 下一个
 				["<tab>"] = cmp.mapping.select_next_item(),
 
-         --[[ Accept currently selected item. 
+				--[[ Accept currently selected item.
          Set `select` to `false` to only confirm explicitly selected items. ]]
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
 			}),
@@ -52,7 +52,7 @@ return {
 				-- { name = 'snippy' }, -- For snippy users.
 			}, {
 				{ name = "buffer" },
-        {name = "path"},
+				{ name = "path" },
 			}),
 		})
 
@@ -70,6 +70,7 @@ return {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = {
 				{ name = "buffer" },
+				{ name = "path" },
 			},
 		})
 
