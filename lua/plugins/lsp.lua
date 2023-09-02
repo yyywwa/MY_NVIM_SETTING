@@ -33,11 +33,11 @@ return {
 			map("n", "gh", vim.lsp.buf.hover, bufopts)
 			-- 查看函数相关引用
 			map("n", "gr", vim.lsp.buf.references, bufopts)
-      --查看完整错误信息
+			--查看完整错误信息
 			map("n", "gp", vim.diagnostic.open_float, bufopts)
-      --跳到上一个错误
+			--跳到上一个错误
 			map("n", "gk", vim.diagnostic.goto_prev, bufopts)
-      --跳到下一个错误
+			--跳到下一个错误
 			map("n", "gj", vim.diagnostic.goto_next, bufopts)
 		end
 
@@ -52,7 +52,6 @@ return {
 			settings = {
 				Lua = {
 					runtime = {
-						-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
 						version = "LuaJIT",
 						path = lua_runtime_path,
 					},
@@ -61,7 +60,6 @@ return {
 						globals = { "vim" },
 					},
 					workspace = {
-						-- Make the server aware of Neovim runtime files
 						library = {
 							--vim.api.nvim_get_runtime_file("", true),
 							"${3rd}/luassert/library",
