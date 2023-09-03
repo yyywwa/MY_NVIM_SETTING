@@ -1,21 +1,27 @@
 return {
-	"sainnhe/gruvbox-material",
-	dependencies = {
+	"sainnhe/gruvbox-material", dependencies = {
 		"morhetz/gruvbox",
 		"rose-pine/neovim",
-    "catppuccin/nvim",
+		"catppuccin/nvim",
+		"savq/melange-nvim",
 	},
 	version = "*",
 	config = function()
 		local function setLight()
 			vim.o.background = "light"
-		end local colorschemes = { dark = {
+		end
+		local colorschemes = {
+			dark = {
 				"gruvbox-material",
 				"gruvbox",
 				"rose-pine",
-        "catppuccin"
+				"catppuccin",
+				"melange",
 			},
+
 			light = {
+				"catppuccin-latte",
+
 				{
 					theme = "gruvbox",
 					config = setLight,
@@ -30,14 +36,13 @@ return {
 					theme = "rose-pine",
 					config = setLight,
 				},
-        {
-          theme = "catppuccin-latte",
-          config = function ()
-          end
-        },
+				{
+					theme = "melange",
+					config = setLight,
+				},
 			},
 		}
 
-    SetColorsCheme(colorschemes.light[4])
+		SetColorsCheme(colorschemes.light[3])
 	end,
 }
