@@ -1,7 +1,6 @@
 -- utf8
 vim.g.encoding = "UTF-8"
-vim.o.fileencoding = "utf-8"
--- jkhl 移动时光标周围保留8行
+vim.o.fileencoding = "utf-8" -- jkhl 移动时光标周围保留8行
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 -- 使用相对行号
@@ -96,22 +95,18 @@ opt = { noremap = true, silent = true }
 ---------------------------------key----------------------------------------------------
 
 ---------------------------------function----------------------------------------------------
-function SetColorschemesByTime(colorscheme)
-	-- 获取当前时间
-	local current_time = os.date("*t")
+function SetColorsCheme(options)
+  if type(options) == "table" then
+    options.config()
+    vim.cmd("colorscheme " .. options.theme)
+  else
+    vim.cmd("colorscheme " .. options)
+  end
+end
 
-	-- 替换下面的值为你所在地的日出和日落时间（24小时制）
-	local sunrise_hour = 6 -- 举例：日出时间为早上6点
-	local sunset_hour = 20 -- 举例：日落时间为晚上6点
-
-	-- 判断当前时间是否在日出和日落之间
-	local is_daytime = current_time.hour >= sunrise_hour and current_time.hour < sunset_hour
-
-	if is_daytime then
-		--print("现在是明亮的天空")
-		vim.cmd("colorscheme " .. colorscheme.light[math.random(1, #colorscheme.light)])
-	else
-		vim.cmd("colorscheme " .. colorscheme.dark[math.random(1, #colorscheme.dark)])
-	end
+function SetRandomColorsCheme(colorschemes)
+  local index = math.random(1, #colorschemes)
+  local value = colorschemes[index]
+  SetColorsCheme(value)
 end
 ---------------------------------function----------------------------------------------------

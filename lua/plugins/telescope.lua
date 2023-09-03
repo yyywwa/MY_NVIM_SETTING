@@ -22,9 +22,10 @@ return {
 			},
 		})
 		local builtin = require("telescope.builtin")
-		vim.keymap.set("n", "<leader>ff", builtin.find_files, opt)
-		vim.keymap.set("n", "<leader>fg", builtin.live_grep, opt)
-		vim.keymap.set("n", "<leader>fb", builtin.buffers, opt)
-		vim.keymap.set("n", "<leader>fh", builtin.help_tags, opt)
+		local map = vim.keymap.set --?????? why can't use vim.api.nvim_set_keymap
+		map("n", "<leader>ff", builtin.find_files, opt)
+		map("n", "<leader>fg", builtin.live_grep, opt)
+		map("n", "<leader>fb", builtin.buffers, opt)
+		map("n", "<leader>fh", builtin.help_tags, opt)
 	end,
 }
