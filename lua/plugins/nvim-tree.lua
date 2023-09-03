@@ -4,7 +4,7 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 
 	config = function()
-		map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
+		Keymap("n", "<leader>m", ":NvimTreeToggle<CR>", Opt)
 		require("nvim-tree").setup({
 			sort_by = "case_sensitive",
 			view = {

@@ -3,11 +3,11 @@ return {
 	version = "*",
 	dependencies = { "rcarriga/nvim-notify", "muniftanjim/nui.nvim" },
 	config = function()
-    map("n", "<leader>onn", "<cmd>Noice telescope<cr>",opt)
-    map("n", "<leader>ont", "<cmd>Noice telescope<cr>",opt)
-    map("n", "<leader>onm", "<cmd>messages<cr>",opt)
-    map("n", "<leader>ond", "<cmd>NoiceDisable<cr>",opt)
-    map("n", "<leader>one", "<cmd>NoiceEnable<cr>",opt)
+    Keymap("n", "<leader>onn", "<cmd>Noice telescope<cr>",Opt)
+    Keymap("n", "<leader>ont", "<cmd>Noice telescope<cr>",Opt)
+    Keymap("n", "<leader>onm", "<cmd>messages<cr>",Opt)
+    Keymap("n", "<leader>ond", "<cmd>NoiceDisable<cr>",Opt)
+    Keymap("n", "<leader>one", "<cmd>NoiceEnable<cr>",Opt)
 		require("noice").setup({
 			lsp = {
 				progress = {

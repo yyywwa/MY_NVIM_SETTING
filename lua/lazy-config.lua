@@ -36,8 +36,8 @@ require("lazy").setup({
 			vim.g.translator_sourcelang = "en"
 			vim.g.translator_targetlang = "zh-CN"
 			------key---------
-			map("n", "<leader>t", "<Plug>Translate", opt)
-			map("v", "<leader>t", "<Plug>TranslateV", opt)
+			Keymap("n", "<leader>t", "<Plug>Translate", Opt)
+			Keymap("v", "<leader>t", "<Plug>TranslateV", Opt)
 		end,
 	},
 

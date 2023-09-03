@@ -1,33 +1,33 @@
 -----------------------windows------------------------------------
-map("n", "s", "", opt)
+Keymap("n", "s", "", Opt)
 -- windows 分屏快捷键
 -- 上下
-map("n", "sv", ":vsp<CR>", opt)
+Keymap("n", "sv", ":vsp<CR>", Opt)
 --左右
-map("n", "sh", ":sp<CR>", opt)
+Keymap("n", "sh", ":sp<CR>", Opt)
 -- 关闭当前
-map("n", "sc", "<C-w>c", opt)
+Keymap("n", "sc", "<C-w>c", Opt)
 -- 关闭其他
-map("n", "so", "<C-w>o", opt)
+Keymap("n", "so", "<C-w>o", Opt)
 -- Alt + hjkl  窗口之间跳转
--- map("n", "<leader>h", "w | <C-w>h", opt)
--- map("n", "<leader>j", "w | <C-w>j", opt)
--- map("n", "<leader>k", "w | <C-w>k", opt)
--- map("n", "<leader>l", "w | <C-w>l", opt)
-map("n", "<leader>h", "<C-w>h", opt)
-map("n", "<leader>j", "<C-w>j", opt)
-map("n", "<leader>k", "<C-w>k", opt)
-map("n", "<leader>l", "<C-w>l", opt)
+-- Keymap("n", "<leader>h", "w | <C-w>h", Opt)
+-- Keymap("n", "<leader>j", "w | <C-w>j", Opt)
+-- Keymap("n", "<leader>k", "w | <C-w>k", Opt)
+-- Keymap("n", "<leader>l", "w | <C-w>l", Opt)
+Keymap("n", "<leader>h", "<C-w>h", Opt)
+Keymap("n", "<leader>j", "<C-w>j", Opt)
+Keymap("n", "<leader>k", "<C-w>k", Opt)
+Keymap("n", "<leader>l", "<C-w>l", Opt)
 -- 左右比例控制
-map("n", "<C-Left>", ":vertical resize -2<CR>", opt)
-map("n", "<C-Right>", ":vertical resize +2<CR>", opt)
-map("n", "s,", ":vertical resize -20<CR>", opt)
-map("n", "s.", ":vertical resize +20<CR>", opt)
+Keymap("n", "<C-Left>", ":vertical resize -2<CR>", Opt)
+Keymap("n", "<C-Right>", ":vertical resize +2<CR>", Opt)
+Keymap("n", "s,", ":vertical resize -20<CR>", Opt)
+Keymap("n", "s.", ":vertical resize +20<CR>", Opt)
 -- 上下比例
-map("n", "sj", ":resize +10<CR>", opt)
-map("n", "sk", ":resize -10<CR>", opt)
-map("n", "<C-Down>", ":resize +2<CR>", opt)
-map("n", "<C-Up>", ":resize -2<CR>", opt)
+Keymap("n", "sj", ":resize +10<CR>", Opt)
+Keymap("n", "sk", ":resize -10<CR>", Opt)
+Keymap("n", "<C-Down>", ":resize +2<CR>", Opt)
+Keymap("n", "<C-Up>", ":resize -2<CR>", Opt)
 -- 等比例
-map("n", "s=", "<C-w>=", opt)
+Keymap("n", "s=", "<C-w>=", Opt)
 -----------------------windows------------------------------------

@@ -28,17 +28,17 @@ return {
 			},
 		})
 
-		-----------------------keymap---------------------------------
+		-----------------------keyKeymap---------------------------------
 		-- bufferline
 		-- 左右Tab切换
-		map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-		map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+		Keymap("n", "<C-h>", ":BufferLineCyclePrev<CR>", Opt)
+		Keymap("n", "<C-l>", ":BufferLineCycleNext<CR>", Opt)
 		-- 关闭
-		map("n", "<leader>bw", ":Bdelete!<CR>", opt)
+		Keymap("n", "<leader>bw", ":Bdelete!<CR>", Opt)
 		--"moll/vim-bbye"
-		map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
-		map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
-		map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
-		-----------------------keymap---------------------------------
+		Keymap("n", "<leader>bl", ":BufferLineCloseRight<CR>", Opt)
+		Keymap("n", "<leader>bh", ":BufferLineCloseLeft<CR>", Opt)
+		Keymap("n", "<leader>bc", ":BufferLinePickClose<CR>", Opt)
+		-----------------------keyKeymap---------------------------------
 	end,
 }
