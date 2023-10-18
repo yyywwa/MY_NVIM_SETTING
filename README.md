@@ -1,1 +1,1 @@
-# my_nvim_setting
+# my_nvim_setting_in_windows
