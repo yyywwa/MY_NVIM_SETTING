@@ -7,13 +7,12 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
-  "core.nvim": { "branch": "main", "commit": "e6aeba879abb3026db26eca863858e3801c87e94" },
   "formatter.nvim": { "branch": "master", "commit": "34dcdfa0c75df667743b2a50dd99c84a557376f0" },
   "gruvbox": { "branch": "master", "commit": "f1ecde848f0cdba877acb0c740320568252cc482" },
   "gruvbox-material": { "branch": "master", "commit": "30e9f4b0fa24c25980df1690a8c47c36e40b6673" },
   "indent-blankline.nvim": { "branch": "master", "commit": "9301e434dd41154ffe5c3d5b8a5c9acd075ebeff" },
   "lazy.nvim": { "branch": "main", "commit": "4c75c8eeb957a99aa44ce8e526c04340ab358c5e" },
-  "lualine.nvim": { "branch": "master", "commit": "1a3f6bba410aff5a51bf8c84287aaa3a8ba30d0d" },
+  "lualine.nvim": { "branch": "master", "commit": "7533b0ead663d80452210c0c089e5105089697e5" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "e7b64c11035aa924f87385b72145e0ccf68a7e0a" },
   "mason.nvim": { "branch": "main", "commit": "cd7835b15f5a4204fc37e0aa739347472121a54c" },
   "melange-nvim": { "branch": "master", "commit": "517518347e41301bb2d1189d257f3918551a2ea5" },
@@ -36,6 +35,6 @@
   "tabout.nvim": { "branch": "master", "commit": "0d275c8d25f32457e67b5c66d6ae43f26a61bce5" },
   "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
   "toggleterm.nvim": { "branch": "main", "commit": "faee9d60428afc7857e0927fdc18daa6c409fa64" },
-  "translate.nvim": { "branch": "main", "commit": "dbe51100db78cb011bb0147bc0805a5e35824240" },
-  "vim-bbye": { "branch": "master", "commit": "25ef93ac5a87526111f43e5110675032dbcacf56" }
+  "vim-bbye": { "branch": "master", "commit": "25ef93ac5a87526111f43e5110675032dbcacf56" },
+  "vim-translator": { "branch": "master", "commit": "6f0639c6d471a3a90ac19db96e1e379c030f74e3" }
 }
