@@ -1,5 +1,6 @@
 return {
-	"sainnhe/gruvbox-material", dependencies = {
+	"sainnhe/gruvbox-material",
+	dependencies = {
 		"morhetz/gruvbox",
 		"rose-pine/neovim",
 		"catppuccin/nvim",
@@ -12,37 +13,41 @@ return {
 		end
 		local colorschemes = {
 			dark = {
-				"gruvbox-material",
-				"gruvbox",
-				"rose-pine",
-				"catppuccin",
-				"melange",
-			},
-
-			light = {
-				"catppuccin-latte",
-
 				{
-					theme = "gruvbox",
-					config = setLight,
+					theme = "gruvbox-material",
+					config = nil,
 				},
 
 				{
-					theme = "gruvbox-material",
-					config = setLight,
+					theme = "gruvbox",
+					config = nil,
 				},
 
 				{
 					theme = "rose-pine",
-					config = setLight,
+					config = nil,
 				},
+
+				{
+					theme = "catppuccin",
+					config = nil,
+				},
+
 				{
 					theme = "melange",
+					config = nil,
+				},
+			},
+
+			light = {
+				{
+					theme = "gruvbox-material",
 					config = setLight,
 				},
 			},
 		}
 
-		SetColorsCheme(colorschemes.light[3])
+    SetColorSchemeByTime(colorschemes)
+    --SetRandomColorScheme(colorschemes.dark)
 	end,
 }

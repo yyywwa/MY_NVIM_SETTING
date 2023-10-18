@@ -1,9 +1,9 @@
 -----------------------windows------------------------------------
 Keymap("n", "s", "", Opt)
 -- windows 分屏快捷键
--- 上下
-Keymap("n", "sv", ":vsp<CR>", Opt)
 --左右
+Keymap("n", "sv", ":vsp<CR>", Opt)
+-- 上下
 Keymap("n", "sh", ":sp<CR>", Opt)
 -- 关闭当前
 Keymap("n", "sc", "<C-w>c", Opt)

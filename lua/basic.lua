@@ -8,6 +8,7 @@ vim.o.sidescrolloff = 8
 vim.wo.relativenumber = true
 -- 高亮所在行
 vim.wo.cursorline = true
+vim.opt.guicursor= "i:block"
 -- 显示左侧图标指示列
 vim.wo.signcolumn = "yes"
 -- 缩进2个空格等于一个Tab
@@ -80,6 +81,18 @@ vim.api.nvim_set_option("clipboard", "unnamedplus")
 -- 在 init.lua 的一开始就禁用 netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
 ---------------------------------nvim-tree----------------------------------------------
+---------------------------------shell----------------------------------------------
+local powershell_options = {
+  shell = vim.fn.executable "pwsh" == 1 and "pwsh" or "powershell",
+  shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+  shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
+  shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
+  shellquote = "",
+  shellxquote = "",
+}
 
+for option, value in pairs(powershell_options) do
+  vim.opt[option] = value
+end
+---------------------------------shell----------------------------------------------

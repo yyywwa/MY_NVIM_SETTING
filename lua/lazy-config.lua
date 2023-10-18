@@ -28,18 +28,18 @@ require("lazy").setup({
 		end,
 	},
 
-	--翻译
+	--跳出区域
 	{
-		"voldikss/vim-translator",
+		"abecodes/tabout.nvim",
 		version = "*",
-		config = function()
-			vim.g.translator_sourcelang = "en"
-			vim.g.translator_targetlang = "zh-CN"
-			------key---------
-			Keymap("n", "<leader>t", "<Plug>Translate", Opt)
-			Keymap("v", "<leader>t", "<Plug>TranslateV", Opt)
-		end,
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"hrsh7th/nvim-cmp",
+		},
+		config = true,
 	},
+
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
 	--括号自动补全
 	{
@@ -49,19 +49,8 @@ require("lazy").setup({
 		opts = {}, -- this is equalent to setup({}) function
 	},
 
-	--缩进显示
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		version = "*",
-		config = function()
-			require("indent_blankline").setup({
-				-- for example, context is off by default, use this to turn it on
-				show_current_context = true,
-				show_current_context_start = true,
-			})
-		end,
-	},
-	--终端
+
+	--终端 terminal
 	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
