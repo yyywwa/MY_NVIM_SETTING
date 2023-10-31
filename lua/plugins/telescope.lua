@@ -1,4 +1,5 @@
 return {
+  -- you need install fd and ripgrep
 	"nvim-telescope/telescope.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	version = "*",
