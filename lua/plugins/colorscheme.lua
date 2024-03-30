@@ -47,7 +47,6 @@ return {
 			},
 		}
 
-    SetColorSchemeByTime(colorschemes)
-    --SetRandomColorScheme(colorschemes.dark)
+    SetColorScheme(colorschemes.dark[1])
 	end,
 }
