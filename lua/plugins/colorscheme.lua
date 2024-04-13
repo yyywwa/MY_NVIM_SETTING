@@ -5,6 +5,7 @@ return {
 		"rose-pine/neovim",
 		"catppuccin/nvim",
 		"savq/melange-nvim",
+		"folke/tokyonight.nvim",
 	},
 	version = "*",
 	config = function()
@@ -15,6 +16,11 @@ return {
 			dark = {
 				{
 					theme = "gruvbox-material",
+					config = nil,
+				},
+
+				{
+					theme = "tokyonight-storm",
 					config = nil,
 				},
 
@@ -47,6 +53,6 @@ return {
 			},
 		}
 
-    SetColorScheme(colorschemes.dark[1])
+		SetColorScheme(colorschemes.dark[2])
 	end,
 }

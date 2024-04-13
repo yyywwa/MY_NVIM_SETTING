@@ -18,16 +18,6 @@ require("lazy").setup({
 		import = "plugins",
 	},
 
-	--下面的utf-8/linux/ 标志
-	{
-		"nvim-lualine/lualine.nvim",
-		version = "*",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("lualine").setup()
-		end,
-	},
-
 	--跳出区域
 	{
 		"abecodes/tabout.nvim",
@@ -39,7 +29,7 @@ require("lazy").setup({
 		config = true,
 	},
 
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
 	--括号自动补全
 	{
@@ -49,24 +39,30 @@ require("lazy").setup({
 		opts = {}, -- this is equalent to setup({}) function
 	},
 
-
 	--终端 terminal
 	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
 		config = function()
-      require("toggleterm").setup {
-        size = 10,
-        open_mapping = [[<C-\>]],
-        start_in_insert = true,
-        direction = "float",
-        shell = "pwsh.exe",
-        float_opts = {
-          border = "curved",
-          width = math.ceil(vim.o.columns*0.8),
-          height = math.ceil(vim.o.columns*0.2)
-        }
-      }
+			require("toggleterm").setup({
+				size = 10,
+				open_mapping = [[<C-\>]],
+				start_in_insert = true,
+				direction = "float",
+				shell = "pwsh.exe",
+				float_opts = {
+					border = "curved",
+					width = math.ceil(vim.o.columns * 0.8),
+					height = math.ceil(vim.o.columns * 0.2),
+				},
+			})
 		end,
+	},
+	{
+		"Mythos-404/xmake.nvim",
+		lazy = true,
+		event = "BufReadPost xmake.lua",
+		config = true,
+		dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
 	},
 })

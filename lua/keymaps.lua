@@ -10,14 +10,10 @@ Keymap("n", "sc", "<C-w>c", Opt)
 -- 关闭其他
 Keymap("n", "so", "<C-w>o", Opt)
 -- Alt + hjkl  窗口之间跳转
--- Keymap("n", "<leader>h", "w | <C-w>h", Opt)
--- Keymap("n", "<leader>j", "w | <C-w>j", Opt)
--- Keymap("n", "<leader>k", "w | <C-w>k", Opt)
--- Keymap("n", "<leader>l", "w | <C-w>l", Opt)
-Keymap("n", "<leader>h", "<C-w>h", Opt)
-Keymap("n", "<leader>j", "<C-w>j", Opt)
-Keymap("n", "<leader>k", "<C-w>k", Opt)
-Keymap("n", "<leader>l", "<C-w>l", Opt)
+Keymap("n", "<leader>h", "w | <C-w>h", Opt)
+Keymap("n", "<leader>j", "w | <C-w>j", Opt)
+Keymap("n", "<leader>k", "w | <C-w>k", Opt)
+Keymap("n", "<leader>l", "w | <C-w>l", Opt)
 -- 左右比例控制
 Keymap("n", "<C-Left>", ":vertical resize -2<CR>", Opt)
 Keymap("n", "<C-Right>", ":vertical resize +2<CR>", Opt)
